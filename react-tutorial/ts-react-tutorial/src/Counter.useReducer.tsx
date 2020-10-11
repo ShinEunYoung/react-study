@@ -1,6 +1,7 @@
 import React, { useReducer } from "react";
 
 type Action = { type: "INCREASE" } | { type: "DECREASE" };
+//type Action = { type: "INCREASE" | "DECREASE" };
 
 function reducer(state: number, action: Action): number {
   switch (action.type) {
